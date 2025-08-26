@@ -1,33 +1,28 @@
 main {
     width: 100%;
     min-height: 100vh; /* Altura da janela */
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 main > div {
-    background-color: #C6E8F0;
     width: 90%;
-    max-width: 600px;
-    height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 15px;
     align-items: center;
 }
 
 /* Formulário */
 #formulario {
-    width: 100%;
-    max-width: 340px;
-    height: 300px;
-   /* background-color: brown;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+    gap: 20px;
 }
 
 #secao-instalacao {
@@ -38,9 +33,10 @@ main > div {
 }
 
 #secao-cadastro {
-    width: 340px;
-    height: 100px;
-    /*background-color: burlywood;*/
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #secao-instalacao img {
@@ -53,9 +49,39 @@ main > div {
     width: 100%;
     max-width: 340px;
     background-color: var(--cor-branca);
-
+    
 }
 
+#formulario > div{
+    width: 100%;
+}
+
+#formulario > div > label{
+    font-family: "GFS Didot";
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-jordy-blue);
+    font-weight: 500;/*aumenta ou diminui a espessura da fonte*/
+    padding-bottom: 4px;
+}
+
+.formulario-botao-azul{
+    width: 100%;
+}
+
+#formulario > p{
+    text-transform: uppercase;/*Transforma o texto em maiusculo */
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-frances);
+}
+
+#formulario > a, #secao-cadastro >p >a{
+    text-decoration: none;
+    color: var(--cor-lapis-lazuli);
+}
+
+#secao-cadastro > p{
+    font-size: var(--tamanho-fonte-md);
+}
 .informacao-aplicativo {
     background-color: transparent;
     font-size: var(--tamanho-fonte-sm);
