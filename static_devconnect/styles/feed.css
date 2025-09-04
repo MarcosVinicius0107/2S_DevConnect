@@ -186,6 +186,7 @@ input[type="file"]{
     font-weight: 550;
     padding: 0 3%;
     order: 2;/* muda a ordem de exibição do respectivo elemento*/
+    flex-wrap: wrap;
 }
 
 .descricao-publicacao > p{
@@ -224,4 +225,11 @@ input[type="file"]{
 
 .card-publi > button{
     margin: 15px 3%;
+    background-color: transparent;
+    border: none;
+
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+    color: var(--cor-cinza-escuro2);
+    cursor: pointer;
 }

@@ -1,0 +1,17 @@
+#cabecalho{
+    width: 100%;/* 100% da janela de visualização*/
+    height: 80px;
+    background: linear-gradient(135deg, #247BA0, #C6E8F0);
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    border-bottom: var(--borda);
+}
+
+.foto-perfil-2{
+    width: 40px;
+    height: 40px;
+    object-fit:cover;/* Redmenciona a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
